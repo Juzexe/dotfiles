@@ -1,0 +1,7 @@
+set shell /usr/bin/fish
+
+set icons true
+set drawbox true
+
+map D delete
+map ge bottom

@@ -1,0 +1,59 @@
+env:
+  # TERM: alacritty
+  TERM: xterm-color
+
+window:
+  dimensions:
+    columns: 120
+    lines: 35
+  padding:
+    x: 5
+    y: 5
+  dynamic_padding: false
+  decorations: none
+  title: Alacritty
+  # startup_mode: Maximized
+  opacity: 0.95
+
+    # family: CaskaydiaCove NF
+font:
+  normal:
+    family: Cascadia Mono PL
+    # family: Monocraft Nerd Font
+  size: 14.0
+  builtin_box_drawing: true
+
+colors:
+   primary:
+     background: '#2E3440'
+     foreground: '#D8DEE9'
+
+   normal:
+     black:   '#3B4252'
+     red:     '#BF616A'
+     green:   '#A3BE8C'
+     yellow:  '#EBCB8B'
+     blue:    '#81A1C1'
+     magenta: '#B48EAD'
+     cyan:    '#88C0D0'
+     white:   '#E5E9F0'
+
+   bright:
+     black:   '#4C566A'
+     red:     '#BF616A'
+     green:   '#A3BE8C'
+     yellow:  '#EBCB8B'
+     blue:    '#81A1C1'
+     magenta: '#B48EAD'
+     cyan:    '#8FBCBB'
+     white:   '#ECEFF4'
+
+live_config_reload: true
+
+shell:
+  program: /usr/bin/fish
+
+working_directory: "/home/juzexe"
+
+key_bindings:
+  - { key: N,              mods: Control|Shift,                   action: SpawnNewInstance}

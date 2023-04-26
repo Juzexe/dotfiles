@@ -1,0 +1,9 @@
+[user]
+	name = Juzexe
+	email = juzexework@gmail.com
+[credential]
+	helper = store
+[alias]
+	tree = log --graph --decorate --pretty=oneline --abbrev-commit --all
+[init]
+	defaultBranch = main
