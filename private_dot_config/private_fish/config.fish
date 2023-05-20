@@ -107,4 +107,14 @@ function __fish_doit_list
     doit list --template '{name}tab{doc}' | sed 's/tab/\t/'
 end
 
+function __forti
+    ps | rg fortisslvpn | awk '{print "disown " $1}'
+end
+
+function forti
+    cd /home/juzexe/Downloads/forticlientsslvpn/
+    ./fortisslvpn.sh &
+    eval (__forti)
+end
+
 complete -c doit -f -a '(__fish_doit_list)'
